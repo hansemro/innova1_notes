@@ -30,3 +30,9 @@ Stemming largely from limited support from the vendor, here are some reasons to 
 - Uncertainty in Host PCIe connectivity to FPGA
 - Uncertainty in SFP connectivity to FPGA
 - Vivado license required for synthesis and implementation
+
+## Disclaimer
+
+I am not responsible for any damage caused by any material in this repo nor is Nvidia/Mellanox.
+If you choose to use any material in this repo and brick your card do not expect Nvidia/Mellanox to
+repair, replace, or service your card as your warranty may be void.
