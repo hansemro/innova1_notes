@@ -1,0 +1,160 @@
+Removes 1149.6-related attributes to allow clean .bsdl to .jtag
+conversion for use with UrJTAG.
+
+To patch, run the following:
+patch xcku060_ffva1156.bsd xcku060_ffva1156.bsd.patch
+
+@@ -851,7 +851,6 @@
+ -- Use Statements
+ 
+ use STD_1149_1_2001.all;
+-use STD_1149_6_2003.all;
+ 
+ -- Component Conformance Statement(s)
+ 
+@@ -1618,68 +1617,6 @@
+         "VREFAD13:AD13," &
+         "VREFJ21:J21";
+ 
+-
+--- Grouped Port Identification
+-
+-attribute PORT_GROUPING of XCKU060_FFVA1156 : entity is
+-"DIFFERENTIAL_VOLTAGE (" &
+-"(MGTHRXP0_127, MGTHRXN0_127), " &
+-"(MGTHRXP0_128, MGTHRXN0_128), " &
+-"(MGTHRXP0_224, MGTHRXN0_224), " &
+-"(MGTHRXP0_225, MGTHRXN0_225), " &
+-"(MGTHRXP0_226, MGTHRXN0_226), " &
+-"(MGTHRXP0_227, MGTHRXN0_227), " &
+-"(MGTHRXP0_228, MGTHRXN0_228), " &
+-"(MGTHRXP1_127, MGTHRXN1_127), " &
+-"(MGTHRXP1_128, MGTHRXN1_128), " &
+-"(MGTHRXP1_224, MGTHRXN1_224), " &
+-"(MGTHRXP1_225, MGTHRXN1_225), " &
+-"(MGTHRXP1_226, MGTHRXN1_226), " &
+-"(MGTHRXP1_227, MGTHRXN1_227), " &
+-"(MGTHRXP1_228, MGTHRXN1_228), " &
+-"(MGTHRXP2_127, MGTHRXN2_127), " &
+-"(MGTHRXP2_128, MGTHRXN2_128), " &
+-"(MGTHRXP2_224, MGTHRXN2_224), " &
+-"(MGTHRXP2_225, MGTHRXN2_225), " &
+-"(MGTHRXP2_226, MGTHRXN2_226), " &
+-"(MGTHRXP2_227, MGTHRXN2_227), " &
+-"(MGTHRXP2_228, MGTHRXN2_228), " &
+-"(MGTHRXP3_127, MGTHRXN3_127), " &
+-"(MGTHRXP3_128, MGTHRXN3_128), " &
+-"(MGTHRXP3_224, MGTHRXN3_224), " &
+-"(MGTHRXP3_225, MGTHRXN3_225), " &
+-"(MGTHRXP3_226, MGTHRXN3_226), " &
+-"(MGTHRXP3_227, MGTHRXN3_227), " &
+-"(MGTHRXP3_228, MGTHRXN3_228), " &
+-"(MGTHTXP0_127, MGTHTXN0_127), " &
+-"(MGTHTXP0_128, MGTHTXN0_128), " &
+-"(MGTHTXP0_224, MGTHTXN0_224), " &
+-"(MGTHTXP0_225, MGTHTXN0_225), " &
+-"(MGTHTXP0_226, MGTHTXN0_226), " &
+-"(MGTHTXP0_227, MGTHTXN0_227), " &
+-"(MGTHTXP0_228, MGTHTXN0_228), " &
+-"(MGTHTXP1_127, MGTHTXN1_127), " &
+-"(MGTHTXP1_128, MGTHTXN1_128), " &
+-"(MGTHTXP1_224, MGTHTXN1_224), " &
+-"(MGTHTXP1_225, MGTHTXN1_225), " &
+-"(MGTHTXP1_226, MGTHTXN1_226), " &
+-"(MGTHTXP1_227, MGTHTXN1_227), " &
+-"(MGTHTXP1_228, MGTHTXN1_228), " &
+-"(MGTHTXP2_127, MGTHTXN2_127), " &
+-"(MGTHTXP2_128, MGTHTXN2_128), " &
+-"(MGTHTXP2_224, MGTHTXN2_224), " &
+-"(MGTHTXP2_225, MGTHTXN2_225), " &
+-"(MGTHTXP2_226, MGTHTXN2_226), " &
+-"(MGTHTXP2_227, MGTHTXN2_227), " &
+-"(MGTHTXP2_228, MGTHTXN2_228), " &
+-"(MGTHTXP3_127, MGTHTXN3_127), " &
+-"(MGTHTXP3_128, MGTHTXN3_128), " &
+-"(MGTHTXP3_224, MGTHTXN3_224), " &
+-"(MGTHTXP3_225, MGTHTXN3_225), " &
+-"(MGTHTXP3_226, MGTHTXN3_226), " &
+-"(MGTHTXP3_227, MGTHTXN3_227), " &
+-"(MGTHTXP3_228, MGTHTXN3_228))";
+-
+ -- Scan Port Identification
+ 
+ attribute TAP_SCAN_IN    of TDI : signal is true;
+@@ -3930,76 +3867,6 @@
+         "2127 (BC_2, *, internal, X)," &
+         "2128 (BC_2, *, internal, X)";
+ 
+-
+--- Advanced I/O Description
+-
+-attribute AIO_COMPONENT_CONFORMANCE of XCKU060_FFVA1156 : entity is
+-        "STD_1149_6_2003";
+-
+-attribute AIO_EXTEST_Pulse_Execution of XCKU060_FFVA1156 : entity is
+-        "Wait_Duration TCK 15";
+-
+-attribute AIO_EXTEST_Train_Execution of XCKU060_FFVA1156 : entity is
+-        "train 30, maximum_time 120.0e-6";
+-
+-attribute AIO_Pin_Behavior of XCKU060_FFVA1156 : entity is
+-"MGTHRXP0_127 : LP_time=22.5e-9 HP_time=45.0e-9; " &
+-"MGTHRXP0_128 : LP_time=22.5e-9 HP_time=45.0e-9; " &
+-"MGTHRXP0_224 : LP_time=22.5e-9 HP_time=45.0e-9; " &
+-"MGTHRXP0_225 : LP_time=22.5e-9 HP_time=45.0e-9; " &
+-"MGTHRXP0_226 : LP_time=22.5e-9 HP_time=45.0e-9; " &
+-"MGTHRXP0_227 : LP_time=22.5e-9 HP_time=45.0e-9; " &
+-"MGTHRXP0_228 : LP_time=22.5e-9 HP_time=45.0e-9; " &
+-"MGTHRXP1_127 : LP_time=22.5e-9 HP_time=45.0e-9; " &
+-"MGTHRXP1_128 : LP_time=22.5e-9 HP_time=45.0e-9; " &
+-"MGTHRXP1_224 : LP_time=22.5e-9 HP_time=45.0e-9; " &
+-"MGTHRXP1_225 : LP_time=22.5e-9 HP_time=45.0e-9; " &
+-"MGTHRXP1_226 : LP_time=22.5e-9 HP_time=45.0e-9; " &
+-"MGTHRXP1_227 : LP_time=22.5e-9 HP_time=45.0e-9; " &
+-"MGTHRXP1_228 : LP_time=22.5e-9 HP_time=45.0e-9; " &
+-"MGTHRXP2_127 : LP_time=22.5e-9 HP_time=45.0e-9; " &
+-"MGTHRXP2_128 : LP_time=22.5e-9 HP_time=45.0e-9; " &
+-"MGTHRXP2_224 : LP_time=22.5e-9 HP_time=45.0e-9; " &
+-"MGTHRXP2_225 : LP_time=22.5e-9 HP_time=45.0e-9; " &
+-"MGTHRXP2_226 : LP_time=22.5e-9 HP_time=45.0e-9; " &
+-"MGTHRXP2_227 : LP_time=22.5e-9 HP_time=45.0e-9; " &
+-"MGTHRXP2_228 : LP_time=22.5e-9 HP_time=45.0e-9; " &
+-"MGTHRXP3_127 : LP_time=22.5e-9 HP_time=45.0e-9; " &
+-"MGTHRXP3_128 : LP_time=22.5e-9 HP_time=45.0e-9; " &
+-"MGTHRXP3_224 : LP_time=22.5e-9 HP_time=45.0e-9; " &
+-"MGTHRXP3_225 : LP_time=22.5e-9 HP_time=45.0e-9; " &
+-"MGTHRXP3_226 : LP_time=22.5e-9 HP_time=45.0e-9; " &
+-"MGTHRXP3_227 : LP_time=22.5e-9 HP_time=45.0e-9; " &
+-"MGTHRXP3_228 : LP_time=22.5e-9 HP_time=45.0e-9; " &
+-"MGTHTXP0_127; " &
+-"MGTHTXP0_128; " &
+-"MGTHTXP0_224; " &
+-"MGTHTXP0_225; " &
+-"MGTHTXP0_226; " &
+-"MGTHTXP0_227; " &
+-"MGTHTXP0_228; " &
+-"MGTHTXP1_127; " &
+-"MGTHTXP1_128; " &
+-"MGTHTXP1_224; " &
+-"MGTHTXP1_225; " &
+-"MGTHTXP1_226; " &
+-"MGTHTXP1_227; " &
+-"MGTHTXP1_228; " &
+-"MGTHTXP2_127; " &
+-"MGTHTXP2_128; " &
+-"MGTHTXP2_224; " &
+-"MGTHTXP2_225; " &
+-"MGTHTXP2_226; " &
+-"MGTHTXP2_227; " &
+-"MGTHTXP2_228; " &
+-"MGTHTXP3_127; " &
+-"MGTHTXP3_128; " &
+-"MGTHTXP3_224; " &
+-"MGTHTXP3_225; " &
+-"MGTHTXP3_226; " &
+-"MGTHTXP3_227; " &
+-"MGTHTXP3_228 ";
+-
+ -- Design Warning Section
+ 
+ attribute DESIGN_WARNING of XCKU060_FFVA1156 : entity is
