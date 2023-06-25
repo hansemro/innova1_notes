@@ -75,5 +75,9 @@ innova1_notes/ : This directory
 │   ├── <general_guide>.md : Guide generic to all boards
 │   ├── overview.md : Overview of guides in this directory
 │   └── ...
+├── jtag/ : JTAG-related files
+│   ├── xcku060_ffva1156.bsd.patch : Patch to remove UrJTAG-incompatible attributes
+│   ├── xcku060_ffva1156.jtag : UrJTAG-compatible JTAG definition file
+│   └── ...
 └── README.md
 ```
