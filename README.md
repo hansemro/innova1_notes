@@ -36,3 +36,44 @@ Stemming largely from limited support from the vendor, here are some reasons to 
 I am not responsible for any damage caused by any material in this repo nor is Nvidia/Mellanox.
 If you choose to use any material in this repo and brick your card do not expect Nvidia/Mellanox to
 repair, replace, or service your card as your warranty may be void.
+
+## Repo Organization
+
+This repo will organize general and board-specific materials as shown in the directory structure
+below:
+
+```
+innova1_notes/ : This directory
+├── boards/ : Collection of board-specific materials
+│   ├── <board>/ : Part Number
+│   │   ├── connectx_fw/ : ConnectX 4 firmware backup(s)
+│   │   │   └── fw-ConnectX4-<version>-<board>.bin
+│   │   ├── fpga_demos/ : FPGA demos (constraint + RTL source preferred)
+│   │   │   ├── blinky/
+│   │   │   │   ├── blinky.v : RTL source
+│   │   │   │   ├── constraints.xdc : design constraints file
+│   │   │   │   └── README.md : project README
+│   │   │   └── ...
+│   │   ├── fpga_image/ : FPGA image(s)
+│   │   │   └── user_v<version>-<board>.bin
+│   │   ├── photos/ : Board photo(s) and annotation(s)
+│   │   │   ├── <back_pcb_photo>
+│   │   │   ├── <front_pcb_photo>
+│   │   │   ├── <gimp_annotated_board>.xcf
+│   │   │   └── ...
+│   │   ├── sch/ : KiCad Schematic
+│   │   │   ├── <board>.kicad_pro
+│   │   │   ├── <board>.pdf
+│   │   │   └── ...
+│   │   ├── constraints.xdc : Design constraints file for Vivado flow
+│   │   ├── hardware_info.md : Hardware-specific information
+│   │   ├── <hw_specific_guide>.md : Hardware-specific guide(s)
+│   │   ├── overview.md : Overview of guides in this directory
+│   │   └── ...
+│   └── ...
+├── guides/
+│   ├── <general_guide>.md : Guide generic to all boards
+│   ├── overview.md : Overview of guides in this directory
+│   └── ...
+└── README.md
+```
