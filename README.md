@@ -48,16 +48,12 @@ below:
 innova1_notes/ : This directory
 ├── boards/ : Collection of board-specific materials
 │   ├── <board>/ : Part Number
-│   │   ├── connectx_fw/ : ConnectX 4 firmware backup(s)
-│   │   │   └── fw-ConnectX4-<version>-<board>.bin
 │   │   ├── fpga_demos/ : FPGA demos (constraint + RTL source preferred)
 │   │   │   ├── blinky/
 │   │   │   │   ├── blinky.v : RTL source
 │   │   │   │   ├── constraints.xdc : design constraints file
 │   │   │   │   └── README.md : project README
 │   │   │   └── ...
-│   │   ├── fpga_image/ : FPGA image(s)
-│   │   │   └── user_v<version>-<board>.bin
 │   │   ├── photos/ : Board photo(s) and annotation(s)
 │   │   │   ├── <back_pcb_photo>
 │   │   │   ├── <front_pcb_photo>
