@@ -23,10 +23,12 @@ Stemming largely from limited support from the vendor, here are some reasons to 
 - No vendor-provided constraints file
     - Extensive reverse engineering effort required
 - No firmware or FPGA image updates
-- Limited driver support
-    - Unsupported functionality:
-        - Disconnect/Connect FPGA from ConnectX ASIC
-        - Schedule custom user image as startup configuration
+- JTAG required to disconnect FPGA from ConnectX ASIC
+    - Required to avoid `[Labtools 27-3165] End of startup status: Low` error
+    - No available software/driver to connect/disconnect ConnectX
+- JTAG required to program/boot custom image from configuration memory
+    - `mlx_fpga` can be used to burn any configuration image while running stock User/Factory image
+    - Need to investigate the conditions to allow custom image booting
 - Uncertainty in Host PCIe connectivity to FPGA
 - Uncertainty in SFP connectivity to FPGA
 - Vivado license required for synthesis and implementation
