@@ -81,9 +81,9 @@ P/N: MNV101511A-BCAT
 - D11
 - D12
 
-## JP2/JTAG Header
+## JP3/JTAG Header
 
-JP2 is a 2x9-pin 2mm pitch header for JTAG access to FPGA. Compatible with AMD/Xilinx HW-RIBBON14.
+JP3 is a 2x9-pin 2mm pitch header for JTAG access to FPGA. Compatible with AMD/Xilinx HW-RIBBON14.
 
 Pinout:
 ```
