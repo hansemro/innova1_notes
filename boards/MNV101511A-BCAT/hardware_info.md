@@ -39,7 +39,9 @@ P/N: MNV101511A-BCAT
 - U14: TI TPS51200 3A Sink/Source DDR Termination Regulator w/ VTTREF Buffered Reference for DDRx (Marking:1200)
 - U15: TI TPS73701DRBR 1A ultra-low-dropout voltage regulator with reverse current protection & enable (Marking:BZN)
 - U16: SK Hynix DDR4 256Mx16 H5AN4G6NAFR-UHC
+- U20: 100.00 MHz Crystal Oscillator (Marking:100.00 JB33 5E)
 - U22: SK Hynix DDR4 256Mx16 H5AN4G6NAFR-UHC
+- U24: Epson SG5032EAN PLL LVDS Crystal Oscillator (Marking:E 156.25G O VAN56UK)
 - U25: ? (Marking:5933B 513) (QFN24)
 - U26: N-channel enhancement mode MOSFET DMN63D8LW (Marking:MXX)
 - U27: SK Hynix DDR4 256Mx16 H5AN4G6NAFR-UHC
