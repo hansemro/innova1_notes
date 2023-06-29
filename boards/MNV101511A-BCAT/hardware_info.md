@@ -86,26 +86,18 @@ P/N: MNV101511A-BCAT
 JP3 is a 2x9-pin 2mm pitch header for JTAG access to FPGA. Compatible with AMD/Xilinx HW-RIBBON14.
 
 Pinout:
-```
-1 - ?
-2 - GND
-3 - GND
-4 - GND
-5 - GND
-6 - GND
-7 - GND
-8 - GND
-9 - ?
-10 - ?
-11 - 3V3
-12 - TMS
-13 - TCK
-14 - TDO
-15 - TDI
-16 - ?
-17 - ?
-18 - ?
-```
+
+| Pin No. | Name | Pin No. | Name |
+| ------- | ---- | ------- | ---- |
+| 1       | ?    | 10      | ?    |
+| 2       | GND  | 11      | 3V3  |
+| 3       | GND  | 12      | TMS  |
+| 4       | GND  | 13      | TCK  |
+| 5       | GND  | 14      | TDO  |
+| 6       | GND  | 15      | TDI  |
+| 7       | GND  | 16      | ?    |
+| 8       | GND  | 17      | ?    |
+| 9       | ?    | 18      | ?    |
 
 ## Verbose lspci Output
 
