@@ -48,6 +48,11 @@ below:
 innova1_notes/ : This directory
 ├── boards/ : Collection of board-specific materials
 │   ├── <board>/ : Part Number
+│   │   ├── bscan_recs/ : JTAG Boundary Scan Recordings
+│   │   │   ├── <activity>/ : recording of analysis
+│   │   │   │   ├── bscan_values.hex : samples in HEX
+│   │   │   │   └── README.md : Description of activity + analysis
+│   │   │   └── ...
 │   │   ├── fpga_demos/ : FPGA demos (constraint + RTL source preferred)
 │   │   │   ├── blinky/
 │   │   │   │   ├── blinky.v : RTL source
@@ -77,5 +82,7 @@ innova1_notes/ : This directory
 │   ├── xcku060_ffva1156.bsd.patch : Patch to remove UrJTAG-incompatible attributes
 │   ├── xcku060_ffva1156.jtag : UrJTAG-compatible JTAG definition file
 │   └── ...
-└── README.md
+├── scripts/
+│   └── ...
+└── README.md : this README
 ```
