@@ -25,6 +25,8 @@ P/N: MNV101511A-BCAT
 
 ## Front PCB Components
 
+<img src="./photos/Front_PCB.jpg" width="800"/>
+
 - U1: Mellanox Technologies ConnectX-4 Lx MT27711A0-FDCF-GE
 - U2: Xilinx Kintex Ultrascale XCKU060 FFVA1156AAY1537 DF5289010A 2l
 - U3: TI SN74LVC1G3157 5V; SPDT, 1-channel general-purpose analog switch (Marking:C55)
@@ -51,6 +53,8 @@ P/N: MNV101511A-BCAT
 - U31: Atmel ATMLH652 2DCM
 
 ## Back PCB Components
+
+<img src="./photos/Back_PCB.jpg" width="800"/>
 
 - U34: Micron MT25QL512ABB8E12-0SIT 512Mb SPI Flash (Micron FBGA:RW181)
 - U35: TI SN74LVC1G3157 5V; SPDT, 1-channel general-purpose analog switch (Marking:C55)
