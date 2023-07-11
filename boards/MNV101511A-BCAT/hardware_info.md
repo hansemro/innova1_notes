@@ -68,18 +68,21 @@ P/N: MNV101511A-BCAT
 
 ## LEDs
 
-- D1 : Physical/Logical link indicator
-- D2 : AF10
-- D3 : AG10
-- D4 : AF9
-- D5 : AG9
-- D6 : AE8
-- D7 : AF8
-- D8 : AE10
-- D9 : AD10
-- D10
-- D11 : DONE_N7
-- D12
+| Label | FPGA LOC | Description |
+| ----- | -------- | ----------- |
+| D1    | N/C      | Physical/Logical link indicator |
+| D2    | AF10     | User/Debug LED |
+| D3    | AG10     | User/Debug LED |
+| D3    | AG10     | User/Debug LED |
+| D4    | AF9      | User/Debug LED |
+| D5    | AG9      | User/Debug LED |
+| D6    | AE8      | User/Debug LED |
+| D7    | AF8      | User/Debug LED |
+| D8    | AE10     | User/Debug LED |
+| D9    | AD10     | User/Debug LED |
+| D10   | N/C      | Power good |
+| D11   | DONE_N7  | Configuration done |
+| D12   | ?        | ? |
 
 ## JP3/JTAG Header
 
