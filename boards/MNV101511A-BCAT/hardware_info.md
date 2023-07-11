@@ -78,7 +78,7 @@ P/N: MNV101511A-BCAT
 - D8 : AE10
 - D9 : AD10
 - D10
-- D11
+- D11 : DONE_N7
 - D12
 
 ## JP3/JTAG Header
