@@ -97,7 +97,7 @@ Pinout:
 | 11      | GND  | 12      | TDI  |
 | 13      | GND  | 14      | ?    |
 | 15      | GND  | 16      | ?    |
-| 17      | ?    | 18      | ?    |
+| 17      | SDA? | 18      | SCL? |
 
 ## Verbose lspci Output
 
