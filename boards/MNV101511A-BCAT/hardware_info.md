@@ -89,15 +89,15 @@ Pinout:
 
 | Pin No. | Name | Pin No. | Name |
 | ------- | ---- | ------- | ---- |
-| 1       | ?    | 10      | ?    |
-| 2       | GND  | 11      | 3V3  |
-| 3       | GND  | 12      | TMS  |
-| 4       | GND  | 13      | TCK  |
-| 5       | GND  | 14      | TDO  |
-| 6       | GND  | 15      | TDI  |
-| 7       | GND  | 16      | ?    |
-| 8       | GND  | 17      | ?    |
-| 9       | ?    | 18      | ?    |
+| 1       | ?    | 2       | ?    |
+| 3       | GND  | 4       | 3V3  |
+| 5       | GND  | 6       | TMS  |
+| 7       | GND  | 8       | TCK  |
+| 9       | GND  | 10      | TDO  |
+| 11      | GND  | 12      | TDI  |
+| 13      | GND  | 14      | ?    |
+| 15      | GND  | 16      | ?    |
+| 17      | ?    | 18      | ?    |
 
 ## Verbose lspci Output
 
