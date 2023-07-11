@@ -88,6 +88,8 @@ P/N: MNV101511A-BCAT
 
 JP3 is a 2x9-pin 2mm pitch header for JTAG access to FPGA. Compatible with AMD/Xilinx HW-RIBBON14.
 
+<img src="./photos/jtag_header.jpg" width=200/>
+
 Pinout:
 
 | Pin No. | Name | Pin No. | Name |
