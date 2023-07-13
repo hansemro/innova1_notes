@@ -127,35 +127,35 @@ I/O Bank: 48
 
 | Name    | FPGA LOC |
 | ------- | -------- |
-| ADR[0]  |          |
-| ADR[1]  |          |
-| ADR[2]  |          |
-| ADR[3]  |          |
-| ADR[4]  |          |
-| ADR[5]  |          |
-| ADR[6]  |          |
-| ADR[7]  |          |
-| ADR[8]  |          |
-| ADR[9]  |          |
-| ADR[10] |          |
-| ADR[11] |          |
-| ADR[12] |          |
-| ADR[13] |          |
-| ADR[14] |          |
-| ADR[15] |          |
-| ADR[16] |          |
-| BA[0]   |          |
-| BA[1]   |          |
-| BG[0]   |          |
-| CK_c    | Y31      |
-| CK_t    | Y32      |
-| CKE     |          |
-| CS_n    |          |
-| ACT_n   |          |
-| ODT     |          |
-| PAR     |          |
-| RESET_n |          |
-| ALERT_n |          |
+| ADR[0]  | AA29     |
+| ADR[1]  | AG34     |
+| ADR[2]  | AC31     |
+| ADR[3]  | AD33     |
+| ADR[4]  | Y30      |
+| ADR[5]  | AB30     |
+| ADR[6]  | AD34     |
+| ADR[7]  | AB31     |
+| ADR[8]  | AF33     |
+| ADR[9]  | AG32     |
+| ADR[10] | V33      |
+| ADR[11] | AG31     |
+| ADR[12] | AC34     |
+| ADR[13] | AD30     |
+| ADR[14] | AB34     |
+| ADR[15] | W33      |
+| ADR[16] | AC32     |
+| BA[0]   | AE32     |
+| BA[1]   | Y33      |
+| BG[0]   | AC33     |
+| CK_t    | Y31      |
+| CK_c    | Y32      |
+| CKE     | AA34     |
+| CS_n    | V34      |
+| ACT_n   | W30      |
+| ODT     | V31      |
+| PAR     | AD31     |
+| RESET_n | AF32     |
+| ALERT_n | AB29     |
 | TEN     | ?        |
 
 ### U9 Byte Lanes
@@ -169,16 +169,16 @@ I/O Bank: 47
 | Name   | FPGA LOC | FPGA Pin Name |
 | ------ | -------- | ------------- |
 | DML_n  | W23      | IO_L13P_T2L_N0_GC_QBC_47 |
-| DQL[0] | | |
-| DQL[1] | | |
-| DQL[2] | | |
-| DQL[3] | | |
-| DQL[4] | | |
-| DQL[5] | | |
-| DQL[6] | | |
-| DQL[7] | | |
-| DQSL_c | V23      | IO_L16N_T2U_N7_QBC_AD3N_47 |
+| DQL[0] | T23      | IO_L17N_T2U_N9_AD10N_47 |
+| DQL[1] | V21      | IO_L18P_T2U_N10_AD2P_47 |
+| DQL[2] | T22      | IO_L17P_T2U_N8_AD10P_47 |
+| DQL[3] | U21      | IO_L15P_T2L_N4_AD11P_47 |
+| DQL[4] | Y25      | IO_L14N_T2L_N3_GC_47 |
+| DQL[5] | W21      | IO_L18N_T2U_N11_AD2N_47 |
+| DQL[6] | W25      | IO_L14P_T2L_N2_GC_47 |
+| DQL[7] | U22      | IO_L15N_T2L_N5_AD11N_47 |
 | DQSL_t | V22      | IO_L16P_T2U_N6_QBC_AD3P_47 |
+| DQSL_c | V23      | IO_L16N_T2U_N7_QBC_AD3N_47 |
 
 #### Upper Byte Lane
 
@@ -187,16 +187,16 @@ I/O Bank: 47
 | Name   | FPGA LOC | FPGA Pin Name |
 | ------ | -------- | ------------- |
 | DMU_n  | AA22     | IO_L7P_T1L_N0_QBC_AD13P_47 |
-| DQU[0] | | |
-| DQU[1] | | |
-| DQU[2] | | |
-| DQU[3] | | |
-| DQU[4] | | |
-| DQU[5] | | |
-| DQU[6] | | |
-| DQU[7] | | |
-| DQSL_c | AC21     | IO_L10N_T1U_N7_QBC_AD4N_47 |
+| DQU[0] | Y23      | IO_L11P_T1U_N8_GC_47 |
+| DQU[1] | AB20     | IO_L9N_T1L_N5_AD12N_47 |
+| DQU[2] | AA23     | IO_L11N_T1U_N9_GC_47 |
+| DQU[3] | AA20     | IO_L9P_T1L_N4_AD12P_47 |
+| DQU[4] | AA25     | IO_L12N_T1U_N11_GC_47 |
+| DQU[5] | AC22     | IO_L8P_T1L_N2_AD5P_47 |
+| DQU[6] | AA24     | IO_L12P_T1U_N10_GC_47 |
+| DQU[7] | AC23     | IO_L8N_T1L_N3_AD5N_47 |
 | DQSL_t | AB21     | IO_L10P_T1U_N6_QBC_AD4P_47 |
+| DQSL_c | AC21     | IO_L10N_T1U_N7_QBC_AD4N_47 |
 
 ### U13 Byte Lanes
 
@@ -208,17 +208,17 @@ I/O Bank: 48
 
 | Name   | FPGA LOC | FPGA Pin Name |
 | ------ | -------- | ------------- |
-| DML_n  | AE27 | IO_L1P_T0L_N0_DBC_48 |
-| DQL[0] | | |
-| DQL[1] | | |
-| DQL[2] | | |
-| DQL[3] | | |
-| DQL[4] | | |
-| DQL[5] | | |
-| DQL[6] | | |
-| DQL[7] | | |
-| DQSL_c | AG29 | IO_L4N_T0U_N7_DBC_AD7N_48 |
-| DQSL_t | AF29 | IO_L4P_T0U_N6_DBC_AD7P_48 |
+| DML_n  | AE27     | IO_L1P_T0L_N0_DBC_48 |
+| DQL[0] | AF30     | IO_L6P_T0U_N10_AD6P_48 |
+| DQL[1] | AC28     | IO_L3P_T0L_N4_AD15P_48 |
+| DQL[2] | AE30     | IO_L5N_T0U_N9_AD14N_48 |
+| DQL[3] | AD28     | IO_L3N_T0L_N5_AD15N_48 |
+| DQL[4] | AG30     | IO_L6N_T0U_N11_AD6N_48 |
+| DQL[5] | AF28     | IO_L2N_T0L_N3_48 |
+| DQL[6] | AE28     | IO_L2P_T0L_N2_48 |
+| DQL[7] | AD29     | IO_L5P_T0U_N8_AD14P_48 |
+| DQSL_t | AF29     | IO_L4P_T0U_N6_DBC_AD7P_48 |
+| DQSL_c | AG29     | IO_L4N_T0U_N7_DBC_AD7N_48 |
 
 #### Upper Byte Lane
 
@@ -226,17 +226,17 @@ I/O Bank: 47
 
 | Name   | FPGA LOC | FPGA Pin Name |
 | ------ | -------- | ------------- |
-| DMU_n  | V27 | IO_L19P_T3L_N0_DBC_AD9P_47 |
-| DQU[0] | | |
-| DQU[1] | | |
-| DQU[2] | | |
-| DQU[3] | | |
-| DQU[4] | | |
-| DQU[5] | | |
-| DQU[6] | | |
-| DQU[7] | | |
-| DQSL_c | U27 | IO_L22N_T3U_N7_DBC_AD0N_47 |
-| DQSL_t | U26 | IO_L22P_T3U_N6_DBC_AD0P_47 |
+| DMU_n  | V27      | IO_L19P_T3L_N0_DBC_AD9P_47 |
+| DQU[0] | V29      | IO_L23P_T3U_N8_47 |
+| DQU[1] | U25      | IO_L20N_T3L_N3_AD1N_47 |
+| DQU[2] | W28      | IO_L21P_T3L_N4_AD8P_47 |
+| DQU[3] | V26      | IO_L24P_T3U_N10_47 |
+| DQU[4] | W29      | IO_L23N_T3U_N9_47 |
+| DQU[5] | U24      | IO_L20P_T3L_N2_AD1P_47 |
+| DQU[6] | W26      | IO_L24N_T3U_N11_47 |
+| DQU[7] | Y28      | IO_L21N_T3L_N5_AD8N_47 |
+| DQSL_t | U26      | IO_L22P_T3U_N6_DBC_AD0P_47 |
+| DQSL_c | U27      | IO_L22N_T3U_N7_DBC_AD0N_47 |
 
 ### U16 Byte Lane
 
@@ -248,17 +248,17 @@ I/O Bank: 47
 
 | Name   | FPGA LOC | FPGA Pin Name |
 | ------ | -------- | ------------- |
-| DML_n  | Y26 | IO_L1P_T0L_N0_DBC_47 |
-| DQL[0] | | |
-| DQL[1] | | |
-| DQL[2] | | |
-| DQL[3] | | |
-| DQL[4] | | |
-| DQL[5] | | |
-| DQL[6] | | |
-| DQL[7] | | |
-| DQSL_c | AC27 | IO_L4N_T0U_N7_DBC_AD7N_47 |
-| DQSL_t | AC26 | IO_L4P_T0U_N6_DBC_AD7P_47 |
+| DML_n  | Y26      | IO_L1P_T0L_N0_DBC_47 |
+| DQL[0] | AD26     | IO_L2N_T0L_N3_47 |
+| DQL[1] | AB27     | IO_L5N_T0U_N9_AD14N_47 |
+| DQL[2] | AD25     | IO_L2P_T0L_N2_47 |
+| DQL[3] | AA27     | IO_L5P_T0U_N8_AD14P_47 |
+| DQL[4] | AB25     | IO_L6P_T0U_N10_AD6P_47 |
+| DQL[5] | AB26     | IO_L6N_T0U_N11_AD6N_47 |
+| DQL[6] | AB24     | IO_L3P_T0L_N4_AD15P_47 |
+| DQL[7] | AC24     | IO_L3N_T0L_N5_AD15N_47 |
+| DQSL_t | AC26     | IO_L4P_T0U_N6_DBC_AD7P_47 |
+| DQSL_c | AC27     | IO_L4N_T0U_N7_DBC_AD7N_47 |
 
 ### U22 Byte Lanes
 
@@ -270,17 +270,17 @@ I/O Bank: 46
 
 | Name   | FPGA LOC | FPGA Pin Name |
 | ------ | -------- | ------------- |
-| DML_n  | AJ29 | IO_L13P_T2L_N0_GC_QBC_46 |
-| DQL[0] | | |
-| DQL[1] | | |
-| DQL[2] | | |
-| DQL[3] | | |
-| DQL[4] | | |
-| DQL[5] | | |
-| DQL[6] | | |
-| DQL[7] | | |
-| DQSL_c | AJ33 | IO_L16N_T2U_N7_QBC_AD3N_46 |
-| DQSL_t | AH33 | IO_L16P_T2U_N6_QBC_AD3P_46 |
+| DML_n  | AJ29     | IO_L13P_T2L_N0_GC_QBC_46 |
+| DQL[0] | AJ31     | IO_L15N_T2L_N5_AD11N_46 |
+| DQL[1] | AH34     | IO_L18P_T2U_N10_AD2P_46 |
+| DQL[2] | AJ34     | IO_L18N_T2U_N11_AD2N_46 |
+| DQL[3] | AH32     | IO_L17N_T2U_N9_AD10N_46 |
+| DQL[4] | AK32     | IO_L14N_T2L_N3_GC_46 |
+| DQL[5] | AH31     | IO_L17P_T2U_N8_AD10P_46 |
+| DQL[6] | AJ30     | IO_L15P_T2L_N4_AD11P_46 |
+| DQL[7] | AK31     | IO_L14P_T2L_N2_GC_46 |
+| DQSL_t | AH33     | IO_L16P_T2U_N6_QBC_AD3P_46 |
+| DQSL_c | AJ33     | IO_L16N_T2U_N7_QBC_AD3N_46 |
 
 #### Upper Byte Lane
 
@@ -288,17 +288,17 @@ I/O Bank: 46
 
 | Name   | FPGA LOC | FPGA Pin Name |
 | ------ | -------- | ------------- |
-| DMU_n  | AL32 | IO_L19P_T3L_N0_DBC_AD9P_46 |
-| DQU[0] | | |
-| DQU[1] | | |
-| DQU[2] | | |
-| DQU[3] | | |
-| DQU[4] | | |
-| DQU[5] | | |
-| DQU[6] | | |
-| DQU[7] | | |
-| DQSL_c | AP34 | IO_L22N_T3U_N7_DBC_AD0N_46 |
-| DQSL_t | AN34 | IO_L22P_T3U_N6_DBC_AD0P_46 |
+| DMU_n  | AL32     | IO_L19P_T3L_N0_DBC_AD9P_46 |
+| DQU[0] | AP33     | IO_L20N_T3L_N3_AD1N_46 |
+| DQU[1] | AN33     | IO_L20P_T3L_N2_AD1P_46 |
+| DQU[2] | AN31     | IO_L21P_T3L_N4_AD8P_46 |
+| DQU[3] | AM34     | IO_L24N_T3U_N11_46 |
+| DQU[4] | AP31     | IO_L21N_T3L_N5_AD8N_46 |
+| DQU[5] | AL34     | IO_L24P_T3U_N10_46 |
+| DQU[6] | AN32     | IO_L23N_T3U_N9_46 |
+| DQU[7] | AM32     | IO_L23P_T3U_N8_46 |
+| DQSL_t | AN34     | IO_L22P_T3U_N6_DBC_AD0P_46 |
+| DQSL_c | AP34     | IO_L22N_T3U_N7_DBC_AD0N_46 |
 
 ### U27 Byte Lanes
 
@@ -310,17 +310,17 @@ I/O Bank: 46
 
 | Name   | FPGA LOC | FPGA Pin Name |
 | ------ | -------- | ------------- |
-| DML_n  | AH26 | IO_L1P_T0L_N0_DBC_46 |
-| DQL[0] | | |
-| DQL[1] | | |
-| DQL[2] | | |
-| DQL[3] | | |
-| DQL[4] | | |
-| DQL[5] | | |
-| DQL[6] | | |
-| DQL[7] | | |
-| DQSL_c | AL28 | IO_L4N_T0U_N7_DBC_AD7N_46 |
-| DQSL_t | AL27 | IO_L4P_T0U_N6_DBC_AD7P_46 |
+| DML_n  | AH26     | IO_L1P_T0L_N0_DBC_46 |
+| DQL[0] | AK27     | IO_L3N_T0L_N5_AD15N_46 |
+| DQL[1] | AK28     | IO_L6N_T0U_N11_AD6N_46 |
+| DQL[2] | AM27     | IO_L2N_T0L_N3_46 |
+| DQL[3] | AJ28     | IO_L6P_T0U_N10_AD6P_46 |
+| DQL[4] | AM26     | IO_L2P_T0L_N2_46 |
+| DQL[5] | AH27     | IO_L5P_T0U_N8_AD14P_46 |
+| DQL[6] | AK26     | IO_L3P_T0L_N4_AD15P_46 |
+| DQL[7] | AH28     | IO_L5N_T0U_N9_AD14N_46 |
+| DQSL_t | AL27     | IO_L4P_T0U_N6_DBC_AD7P_46 |
+| DQSL_c | AL28     | IO_L4N_T0U_N7_DBC_AD7N_46 |
 
 #### Upper Byte Lane
 
@@ -328,17 +328,17 @@ I/O Bank: 46
 
 | Name   | FPGA LOC | FPGA Pin Name |
 | ------ | -------- | ------------- |
-| DMU_n  | AN26 | IO_L7P_T1L_N0_QBC_AD13P_46 |
-| DQU[0] | | |
-| DQU[1] | | |
-| DQU[2] | | |
-| DQU[3] | | |
-| DQU[4] | | |
-| DQU[5] | | |
-| DQU[6] | | |
-| DQU[7] | | |
-| DQSL_c | AP30 | IO_L10N_T1U_N7_QBC_AD4N_46 |
-| DQSL_t | AN29 | IO_L10P_T1U_N6_QBC_AD4P_46 |
+| DMU_n  | AN26     | IO_L7P_T1L_N0_QBC_AD13P_46 |
+| DQU[0] | AP28     | IO_L8P_T1L_N2_AD5P_46 |
+| DQU[1] | AL30     | IO_L12P_T1U_N10_GC_46 |
+| DQU[2] | AN27     | IO_L9P_T1L_N4_AD12P_46 |
+| DQU[3] | AP29     | IO_L8N_T1L_N3_AD5N_46 |
+| DQU[4] | AM29     | IO_L11N_T1U_N9_GC_46 |
+| DQU[5] | AM30     | IO_L12N_T1U_N11_GC_46 |
+| DQU[6] | AL29     | IO_L11P_T1U_N8_GC_46 |
+| DQU[7] | AN28     | IO_L9N_T1L_N5_AD12N_46 |
+| DQSL_t | AN29     | IO_L10P_T1U_N6_QBC_AD4P_46 |
+| DQSL_c | AP30     | IO_L10N_T1U_N7_QBC_AD4N_46 |
 
 ## Verbose lspci Output
 
